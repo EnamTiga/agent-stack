@@ -1,0 +1,60 @@
+{
+  "planning": {
+    "description": "Idea → spec → tickets → implementation",
+    "skills": [
+      "mattpocock/skills@to-spec", "mattpocock/skills@to-tickets", "mattpocock/skills@to-questionnaire",
+      "mattpocock/skills@grill-me", "mattpocock/skills@grilling", "mattpocock/skills@grill-with-docs",
+      "mattpocock/skills@wizard", "mattpocock/skills@wayfinder", "mattpocock/skills@domain-modeling",
+      "mattpocock/skills@research", "mattpocock/skills@prototype"
+    ]
+  },
+  "frontend": {
+    "description": "React/Next.js SPA + UI/UX + animation",
+    "skills": [
+      "vercel-labs/agent-skills@vercel-react-best-practices", "vercel-labs/agent-skills@vercel-composition-patterns",
+      "vercel-labs/agent-skills@vercel-react-view-transitions", "vercel-labs/agent-skills@web-design-guidelines",
+      "anthropics/skills@frontend-design", "anthropics/skills@web-artifacts-builder",
+      "pbakaus/impeccable@impeccable", "uizze.sh@ui-taste",
+      "wshobson/agents@tailwind-design-system", "secondsky/claude-skills@tailwind-v4-shadcn",
+      "addyosmani/web-quality-skills@accessibility",
+      "emilkowalski/skills@animate", "emilkowalski/skills@animation-performance",
+      "emilkowalski/skills@emil-design-eng", "emilkowalski/skills@pick-ui-library",
+      "heygen-com/hyperframes@hyperframes-animation",
+      "diffusionstudio/lottie@text-to-lottie", "rknall/claude-skills@SVG Logo Designer"
+    ]
+  },
+  "backend": {
+    "description": "Node/TypeScript APIs on Vercel (Neon) & Cloudflare Workers (D1)",
+    "skills": [
+      "addyosmani/agent-skills@api-and-interface-design", "wshobson/agents@nodejs-backend-patterns",
+      "better-auth/skills@better-auth-best-practices", "affaan-m/ecc@database-migrations",
+      "neondatabase/agent-skills@neon-postgres",
+      "cloudflare/skills@cloudflare", "cloudflare/skills@wrangler", "cloudflare/skills@workers-best-practices",
+      "cloudflare/skills@durable-objects", "cloudflare/skills@k2", "cloudflare/skills@web-perf",
+      "cloudflare/skills@nextjs-on-cloudflare", "jezweb/claude-skills@vite-flare-starter"
+    ]
+  },
+  "testing": {
+    "description": "Unit, integration, and E2E testing",
+    "skills": [
+      "mattpocock/skills@tdd", "antfu/skills@vitest",
+      "microsoft/playwright-cli@playwright-cli", "anthropics/skills@webapp-testing",
+      "wshobson/agents@e2e-testing-patterns", "mattpocock/skills@code-review",
+      "mattpocock/skills@diagnosing-bugs"
+    ]
+  },
+  "deploy": {
+    "description": "Ship to Vercel & Cloudflare",
+    "skills": [
+      "vercel-labs/agent-skills@deploy-to-vercel", "vercel-labs/agent-skills@vercel-optimize",
+      "vercel-labs/agent-skills@vercel-cli-with-tokens", "cloudflare/skills@wrangler"
+    ]
+  },
+  "writing": {
+    "description": "Docs & prose quality",
+    "skills": [
+      "vercel-labs/agent-skills@writing-guidelines",
+      "mattpocock/skills@writing-for-agents"
+    ]
+  }
+}

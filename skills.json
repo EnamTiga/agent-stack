@@ -1,0 +1,122 @@
+{
+  "$schema": "https://raw.githubusercontent.com/agent-stack/agent-stack/main/schema.json",
+  "name": "agent-stack",
+  "description": "Curated skills & MCP servers for building SaaS/SPA web apps with AI agents (Vercel + Cloudflare Workers stack).",
+  "version": "1.0.0",
+  "skills": {
+    "mattpocock/skills": {
+      "description": "Engineering workflow: planning, specs, TDD, code review",
+      "skills": ["tdd", "code-review", "codebase-design", "diagnosing-bugs", "domain-modeling", "implement", "implement-spec", "improve-codebase-architecture", "pr", "prototype", "research", "retro", "to-spec", "to-tickets", "to-questionnaire", "triage", "wayfinder", "wizard", "grill-me", "grilling", "grill-with-docs", "handoff", "teach", "wait-what", "ask-matt", "writing-for-agents", "git-guardrails-claude-code", "setup-pre-commit", "setup-matt-pocock-skills"]
+    },
+    "emilkowalski/skills": {
+      "description": "Design engineering: UI polish, animation, micro-interactions",
+      "skills": ["frontend-design-placeholder-emil", "animate", "animate-expo", "animation-performance", "animation-vocabulary", "find-animation-opportunities", "improve-animations", "review-animations", "apple-design", "ask-sonner", "break-ui", "emil-design-eng", "mobile-native", "pick-ui-library", "write-swift"]
+    },
+    "vercel-labs/agent-skills": {
+      "description": "Vercel engineering: React/Next.js best practices, deploy, web guidelines",
+      "skills": ["deploy-to-vercel", "vercel-composition-patterns", "vercel-react-best-practices", "vercel-react-native-skills", "vercel-react-view-transitions", "vercel-cli-with-tokens", "vercel-optimize", "web-design-guidelines", "writing-guidelines"]
+    },
+    "heygen-com/hyperframes@hyperframes-animation": {
+      "description": "Animation framework: motion rules, scene blueprints, runtime adapters",
+      "skills": ["hyperframes-animation"]
+    },
+    "cloudflare/skills": {
+      "description": "Official Cloudflare: Workers, Wrangler, Durable Objects, storage, perf",
+      "skills": ["cloudflare", "wrangler", "workers-best-practices", "durable-objects", "k2", "web-perf", "nextjs-on-cloudflare"]
+    },
+    "wshobson/agents": {
+      "description": "Backend & testing patterns",
+      "skills": ["nodejs-backend-patterns", "e2e-testing-patterns"]
+    },
+    "addyosmani/agent-skills": {
+      "description": "API & interface design (Addy Osmani)",
+      "skills": ["api-and-interface-design"]
+    },
+    "addyosmani/web-quality-skills": {
+      "description": "Web quality: accessibility",
+      "skills": ["accessibility"]
+    },
+    "better-auth/skills": {
+      "description": "Official Better Auth: TypeScript authentication",
+      "skills": ["better-auth-best-practices"]
+    },
+    "neondatabase/agent-skills": {
+      "description": "Official Neon Postgres: connections, branching, migrations",
+      "skills": ["neon-postgres"]
+    },
+    "affaan-m/ecc": {
+      "description": "Database migrations, backend patterns",
+      "skills": ["database-migrations"]
+    },
+    "anthropics/skills": {
+      "description": "Anthropic official: frontend design, webapp testing, artifacts",
+      "skills": ["frontend-design", "webapp-testing", "web-artifacts-builder"]
+    },
+    "pbakaus/impeccable": {
+      "description": "UI quality & craft (Paul Bakaus)",
+      "skills": ["impeccable"]
+    },
+    "uizze.sh@ui-taste": {
+      "description": "Anti-UI-slop playbooks for web/iOS interfaces",
+      "skills": ["ui-taste"],
+      "source": "https://uizze.sh --skill ui-taste"
+    },
+    "wshobson/agents@tailwind-design-system": {
+      "description": "Design systems with Tailwind CSS",
+      "skills": ["tailwind-design-system"]
+    },
+    "secondsky/claude-skills": {
+      "description": "Tailwind v4 + shadcn/ui setup",
+      "skills": ["tailwind-v4-shadcn"]
+    },
+    "antfu/skills": {
+      "description": "Vitest unit testing (by antfu)",
+      "skills": ["vitest"]
+    },
+    "microsoft/playwright-cli": {
+      "description": "Official Playwright CLI for browser automation & E2E",
+      "skills": ["playwright-cli"]
+    },
+    "currents-dev/playwright-best-practices-skill": {
+      "description": "Playwright best practices",
+      "skills": ["playwright-best-practices"]
+    },
+    "diffusionstudio/lottie": {
+      "description": "Text-to-Lottie animations",
+      "skills": ["text-to-lottie"]
+    },
+    "rknall/claude-skills": {
+      "description": "SVG logo design",
+      "skills": ["svg-logo-designer"]
+    },
+    "jezweb/claude-skills": {
+      "description": "Cloudflare full-stack starter (React 19 + Hono + D1 + better-auth)",
+      "skills": ["vite-flare-starter"]
+    }
+  },
+  "mcp": {
+    "context7": {
+      "description": "Up-to-date library docs (Upstash)",
+      "transport": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "shadcn": {
+      "description": "Browse & install shadcn/ui registry components",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "shadcn@latest", "mcp"]
+    },
+    "chrome-devtools": {
+      "description": "Live browser inspection: DOM, console, network, perf (Google)",
+      "transport": "stdio",
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest"]
+    },
+    "serena": {
+      "description": "Semantic code search & navigation for large codebases",
+      "transport": "stdio",
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/oraios/serena", "serena", "start-mcp-server"]
+    }
+  }
+}
